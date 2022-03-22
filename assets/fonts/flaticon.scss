@@ -1,0 +1,56 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?e2311f1ece2263361efdc644ef051e73") format("truetype"),
+url("./flaticon.woff?e2311f1ece2263361efdc644ef051e73") format("woff"),
+url("./flaticon.woff2?e2311f1ece2263361efdc644ef051e73") format("woff2"),
+url("./flaticon.eot?e2311f1ece2263361efdc644ef051e73#iefix") format("embedded-opentype"),
+url("./flaticon.svg?e2311f1ece2263361efdc644ef051e73#flaticon") format("svg");
+}
+
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+$flaticon-map: (
+    "diagram": "\f101",
+    "thinking": "\f102",
+    "settings": "\f103",
+    "support": "\f104",
+    "chip": "\f105",
+    "project-management": "\f106",
+    "hand": "\f107",
+);
+
+.flaticon-diagram:before {
+    content: map-get($flaticon-map, "diagram");
+}
+.flaticon-thinking:before {
+    content: map-get($flaticon-map, "thinking");
+}
+.flaticon-settings:before {
+    content: map-get($flaticon-map, "settings");
+}
+.flaticon-support:before {
+    content: map-get($flaticon-map, "support");
+}
+.flaticon-chip:before {
+    content: map-get($flaticon-map, "chip");
+}
+.flaticon-project-management:before {
+    content: map-get($flaticon-map, "project-management");
+}
+.flaticon-hand:before {
+    content: map-get($flaticon-map, "hand");
+}
+
